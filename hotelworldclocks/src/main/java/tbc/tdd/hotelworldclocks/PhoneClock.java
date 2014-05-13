@@ -7,4 +7,8 @@ public class PhoneClock {
     public PhoneClock(int utcOffset) {
 
     }
+
+    public void setCityClock(CityClock cityClock) {
+
+    }
 }
