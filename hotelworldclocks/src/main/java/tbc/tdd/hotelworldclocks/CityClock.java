@@ -11,6 +11,6 @@ public class CityClock {
 
     public int getTime() {
         // TODO-working-on: The fake value in the production code and the expected value in the test code are duplicated
-        return 1;
+        return this.utcOffset + this.utcZeroTime;
     }
 }
