@@ -11,4 +11,8 @@ public class PhoneClock {
     public void setCityClock(CityClock cityClock) {
 
     }
+
+    public void setTime(int time) {
+
+    }
 }
