@@ -7,4 +7,8 @@ public class CityClock {
     public CityClock(int utcOffset) {
 
     }
+
+    public int getTime() {
+        return 1;
+    }
 }
