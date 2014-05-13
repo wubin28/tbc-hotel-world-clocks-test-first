@@ -22,7 +22,6 @@ public class HotelWorldClocksTest {
         assertEquals(1, londonClock.getTime());
     }
 
-    // TODO-working-on: Negative hour
     @Test
     public void the_time_of_clock_NewYork_should_be_20_after_the_phone_clock_is_set_to_9_Beijing_time() {
         // Arrange
@@ -37,5 +36,5 @@ public class HotelWorldClocksTest {
         assertEquals(20, newYorkClock.getTime());
     }
 
-    // TODO: Set time to multiple city clocks
+    // TODO-working-on: Set time to multiple city clocks
 }
