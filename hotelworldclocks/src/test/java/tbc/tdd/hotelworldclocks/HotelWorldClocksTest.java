@@ -22,6 +22,6 @@ public class HotelWorldClocksTest {
         assertEquals(1, londonClock.getTime());
     }
 
-    // TODO: Negative hour
+    // TODO-working-on: Negative hour
     // TODO: Set time to multiple city clocks
 }
