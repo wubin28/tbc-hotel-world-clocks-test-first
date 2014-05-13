@@ -2,6 +2,8 @@ package tbc.tdd.hotelworldclocks;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by benwu on 14-5-13.
  */
@@ -11,6 +13,8 @@ public class HotelWorldClocksTest {
         // Arrange
 
         // Act
+        phoneClock.setCityClock(londonClock);
+        phoneClock.setTime(9);
 
         // Assert
         assertEquals(1, londonClock.getTime());
