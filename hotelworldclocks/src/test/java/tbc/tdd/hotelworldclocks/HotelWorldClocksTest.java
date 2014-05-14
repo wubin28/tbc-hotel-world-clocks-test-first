@@ -40,7 +40,6 @@ public class HotelWorldClocksTest {
         assertEquals(20, newYorkClock.getTime());
     }
 
-    // TODO-working-on: Set time to multiple city clocks
     @Test
     public void the_time_of_clock_London_and_NewYork_should_be_1_and_20_respectively_after_the_phone_clock_is_set_to_9_Beijing_time() {
         // Arrange
