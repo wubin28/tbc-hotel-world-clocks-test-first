@@ -6,7 +6,6 @@ package tbc.tdd.hotelworldclocks;
 public class CityClock extends Clock{
     private int utcZeroTime;
 
-    // TODO-working-on: The constructors of CityClock and PhoneClock are duplicated
     public CityClock(int utcOffset) {
         super.utcOffset = utcOffset;
     }
