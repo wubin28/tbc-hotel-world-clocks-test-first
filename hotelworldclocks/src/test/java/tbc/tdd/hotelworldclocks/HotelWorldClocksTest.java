@@ -58,4 +58,11 @@ public class HotelWorldClocksTest {
         assertEquals(1, londonClock.getTime());
         assertEquals(20, newYorkClock.getTime());
     }
+
+    // TODO: the time of the phone clock should be set correctly after its setTime() method is invoked
+    @Test
+    public void the_time_of_the_phone_clock_should_be_set_correctly_after_its_setTime_method_is_invoked() {
+        // Assert
+        assertEquals(9, phoneClock.getTime());
+    }
 }
