@@ -23,7 +23,7 @@ public class PhoneClock extends Clock {
         this.hotelWorldClockSystem = hotelWorldClockSystem;
     }
 
-    // TODO: PhoneClock.getTime() and CityClock.getTime() are duplicated
+    // TODO-working-on: PhoneClock.getTime() and CityClock.getTime() are duplicated
     public int getTime() {
         return this.time;
     }
