@@ -10,10 +10,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class HotelWorldClocksTest {
     private HotelWorldClockSystem hotelWorldClockSystem;
+    private PhoneClock phoneClock;
 
     @Before
     public void initialize() {
         this.hotelWorldClockSystem = new HotelWorldClockSystem();
+        this.phoneClock = new PhoneClock(8);
     }
 
     @Test
@@ -21,7 +23,6 @@ public class HotelWorldClocksTest {
         // Arrange
         CityClock londonClock = new CityClock(0);
         hotelWorldClockSystem.attach(londonClock);
-        PhoneClock phoneClock = new PhoneClock(8);
 
         // Act
         phoneClock.setHotelWorldClockSystem(hotelWorldClockSystem);
@@ -36,7 +37,6 @@ public class HotelWorldClocksTest {
         // Arrange
         CityClock newYorkClock = new CityClock(-5);
         hotelWorldClockSystem.attach(newYorkClock);
-        PhoneClock phoneClock = new PhoneClock(8);
 
         // Act
         phoneClock.setHotelWorldClockSystem(hotelWorldClockSystem);
@@ -53,7 +53,6 @@ public class HotelWorldClocksTest {
         CityClock newYorkClock = new CityClock(-5);
         hotelWorldClockSystem.attach(londonClock);
         hotelWorldClockSystem.attach(newYorkClock);
-        PhoneClock phoneClock = new PhoneClock(8);
 
         // Act
         phoneClock.setHotelWorldClockSystem(hotelWorldClockSystem);
@@ -67,8 +66,6 @@ public class HotelWorldClocksTest {
     @Test
     public void the_time_of_the_phone_clock_should_be_set_correctly_after_its_setTime_method_is_invoked() {
         // Arrange
-        PhoneClock phoneClock = new PhoneClock(8);
-
         // Act
         phoneClock.setTime(9);
 
@@ -81,7 +78,6 @@ public class HotelWorldClocksTest {
         // Arrange
         CityClock moscowClock = new CityClock(4);
         hotelWorldClockSystem.attach(moscowClock);
-        PhoneClock phoneClock = new PhoneClock(8);
 
         // Act
         phoneClock.setHotelWorldClockSystem(hotelWorldClockSystem);
